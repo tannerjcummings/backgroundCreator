@@ -1,0 +1,86 @@
+/* Hide the default radio input */
+input[type='radio'] {
+    display: none;
+}
+
+/* Style the label to look like a button */
+label {
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    background-color: #f2f2f2;
+    color: #181616;
+    padding: 20px 5px;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    width:90px;
+    height:40px;
+}
+
+/* Change the label appearance on hover */
+label:hover {
+    background-color: #ddd;
+}
+
+
+/* Color Input Styles */
+input[type='color'] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    cursor: pointer;
+    box-shadow: none;
+    background: transparent;
+
+}
+
+input[type='color']::-webkit-color-swatch-wrapper {
+    padding: 0;
+    width: 60px;
+    height: 60px;
+    border:#000 solid 2px;
+    box-shadow: none;
+    border-radius: 5px;
+    margin:5px;
+}
+
+input[type='color']::-webkit-color-swatch {
+    border: none;
+    box-shadow: none;
+}
+
+/* Layout adjustments */
+#input-container {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height:90px;
+    width:auto;
+}
+
+main {
+    margin-top:10px;
+    min-height: 100vh; /* Minimum height of 100% of the viewport height */
+    width: 100%; /* Full width of the container */
+    display: block; /* Ensures the element is a block-level element */
+}
+
+#line{
+    border:#000 solid 3px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    display:flex;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+}
